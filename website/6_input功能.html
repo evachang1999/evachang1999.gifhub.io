@@ -1,0 +1,44 @@
+<html>
+    <head></head>
+    <body>
+        <input type="text"name="Name" placeholder="姓名">
+        <br>
+        <input type="password"name="password" placeholder="密碼">
+        <br>
+        <input type="number"name="height" min="140" max="210" placeholder="身高">
+        <br>
+        體重<input type="range"name="wid" min="30" max="120" oninput="this.nextElementSibling.value=this.value">
+        <output >65</output>
+        <br>
+        生日<input type="date"name="birth">
+        <br>
+        <input type="email"name="Mail" placeholder="電子郵件">
+        <p>年齡
+        <input type="radio"name="UserAge" value="Age1">0~20
+        <input type="radio"name="UserAge" value="Age2"checked>21~30
+        <input type="radio"name="UserAge" value="Age3">31~40
+        <input type="radio"name="UserAge" value="Age4">41~50
+         </p>
+         <p>手機品牌
+            <input type="checkbox" name="Phone[]" value="Apple">Apple
+            <input type="checkbox" name="Phone[]" value="Apple">Samsung
+            <input type="checkbox" name="Phone[]" value="Apple">Google
+            <br>
+            <textarea name="message" cols="30" rows="5" placeholder="=留言區..."></textarea>
+            <br>
+            <select name="Tel">
+                <option value="0">目前使用的電信？</option>
+                <option value="1">中華電信</option>
+                <option value="1">台灣大哥大</option>
+                <option value="1">遠傳電信</option>
+            </select>
+            <br>
+            <select name="Tel[]" multiple >
+                <option value="0">目前曾經使用的電信（複選）？</option>
+                <option value="1">中華電信</option>
+                <option value="1">台灣大哥大</option>
+                <option value="1">遠傳電信</option>
+            </select>
+         </p>
+    </body>
+</html>
